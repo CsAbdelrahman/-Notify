@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "502532933020",
+    "project_id": "notify-d83e0",
+    "storage_bucket": "notify-d83e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502532933020:android:dc532dfae2bbc01060b459",
+        "android_client_info": {
+          "package_name": "com.example.rolebased"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502532933020-ugcvvh2ou2p7f4m270ipuhpn69u67ibe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVhwqMvf0CxatyACm8Rw8hLNGZXIOpVMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502532933020-ugcvvh2ou2p7f4m270ipuhpn69u67ibe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
