@@ -17,16 +17,18 @@ class _StudentState extends State<Student> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color.fromRGBO(21, 35, 42, 1.0),
+        backgroundColor: Colors.blue,
         title: Text("Student"),
-        leading:IconButton(
-          onPressed: () {
-            logout(context);
-          },
-          icon: Icon(
-            Icons.logout,
-          ),
-        ) ,
+        actions: [
+          IconButton(
+            onPressed: () {
+              logout(context);
+            },
+            icon: Icon(
+              Icons.logout,
+            ),
+          ) ,
+        ],
 
       ),
       body: Padding(
@@ -38,7 +40,7 @@ class _StudentState extends State<Student> {
                 TyperAnimatedText(
 
                     curve: Curves.bounceInOut,
-                    speed: Duration(microseconds: 150000),'HELLO AGAIN! \nWelcome back you\'ve been missed:)',
+                    speed: Duration(microseconds: 150000),'HELLO D.HATEM! \nWelcome back you\'ve been missed:)',
                     textStyle: const TextStyle(
                       color: Colors.black,
                       fontSize: 40,

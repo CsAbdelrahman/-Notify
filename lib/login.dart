@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                     key: _formkey,
                     child: SingleChildScrollView(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        // mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
 
@@ -78,6 +78,20 @@ class _LoginPageState extends State<LoginPage> {
                                     fontSize: 40,
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Visibility(
+
+                                    maintainSize: true,
+                                    maintainAnimation: true,
+                                    maintainState: true,
+                                    visible: visible,
+                                    child: Container(
+                                        child: CircularProgressIndicator(
+
+                                          color: Colors.white,
+                                        ))),
                                 SizedBox(
                                   height: 20,
                                 ),
@@ -165,11 +179,11 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
 
                                 SizedBox(
-                                  height: 150,
+                                  height: 50,
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     MaterialButton(
                                       shape: RoundedRectangleBorder(
@@ -192,6 +206,13 @@ class _LoginPageState extends State<LoginPage> {
                                       ),
                                       color: Colors.white,
                                     ),
+                                    SizedBox(
+                                      width: 20.0,
+                                    ),
+                                    // SizedBox(
+                                    //   height: 50.0,
+                                    // ),
+
                                     Center(
                                       child: SingleChildScrollView(
                                         scrollDirection: Axis.vertical,
@@ -207,10 +228,13 @@ class _LoginPageState extends State<LoginPage> {
                                               width: 170.5,
                                               height: 1,
                                             ),
-                                            Text("OR"
+
+                                            Text("  OR  "
                                               ,style: TextStyle(
                                                 fontSize: 20,
-                                              ),),
+
+                                              ),
+                                            ),
                                             SizedBox(
                                                 child: const DecoratedBox(
                                                   decoration: const BoxDecoration(
@@ -226,7 +250,7 @@ class _LoginPageState extends State<LoginPage> {
                                     ),
 
                                     // SizedBox(
-                                    //   height: 50,
+                                    //   height: 20,
                                     //
                                     // ),
 
@@ -289,15 +313,15 @@ class _LoginPageState extends State<LoginPage> {
                           //
                           // ),
 
-                          Visibility(
-                              maintainSize: true,
-                              maintainAnimation: true,
-                              maintainState: true,
-                              visible: visible,
-                              child: Container(
-                                  child: CircularProgressIndicator(
-                                color: Colors.white,
-                              ))),
+                          // Visibility(
+                          //     maintainSize: true,
+                          //     maintainAnimation: true,
+                          //     maintainState: true,
+                          //     visible: visible,
+                          //     child: Container(
+                          //         child: CircularProgressIndicator(
+                          //       color: Colors.white,
+                          //     ))),
                         ],
                       ),
                     ),
