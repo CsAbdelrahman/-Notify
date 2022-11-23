@@ -29,10 +29,10 @@ class _RegisterState extends State<Register> {
   bool _isObscure2 = true;
   File? file;
   var options = [
-    'Student',
-    'Teacher',
+    'User',
+    'Admin',
   ];
-  var _currentItemSelected = "Student";
+  var _currentItemSelected = "User";
   var rool = "Student";
 
   @override
@@ -219,15 +219,7 @@ class _RegisterState extends State<Register> {
                             obscureText: _isObscure2,
                             controller: confirmpassController,
                             decoration: InputDecoration(
-                              suffixIcon: IconButton(
-                                  icon: Icon(_isObscure2
-                                      ? Icons.visibility_off
-                                      : Icons.visibility),
-                                  onPressed: () {
-                                    setState(() {
-                                      _isObscure2 = !_isObscure2;
-                                    });
-                                  }),
+
                               filled: true,
                               fillColor: Colors.white,
                               hintText: 'Confirm Password',
